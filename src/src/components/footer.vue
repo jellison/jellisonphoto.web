@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <p class="has-text-muted">Copyright &copy; 2019 Jobrina Ellison. All Rights Reserved. Built with &#10084; by <a href="https://www.darkstone.io">Darkstone Software</a>.</p>
+            <p class="has-text-muted">Copyright &copy; 2019 Jobrina Ellison. All Rights Reserved. Built with <i class="fas fa-heart"></i> by <a href="https://www.darkstone.io">Darkstone Software</a>.</p>
         </div>
     </footer>
 </template>

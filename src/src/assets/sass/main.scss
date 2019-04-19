@@ -1,0 +1,145 @@
+@import 'util';
+@import 'bulma-overrides';
+@import 'base';
+@import 'buttons';
+@import 'cards';
+@import 'forms';
+
+/* Banner */
+.banner {
+    background-color: #000;
+    font-size: 22px;
+    color: #fff;
+    padding: 15px;
+
+    p + p {
+        margin: 0 0 0 40px;
+    }
+
+    .banner-content {
+        @include breakpoint(sm) {
+            padding: 0 15px;
+        }
+    }
+}
+
+/* Layout */
+.page-layout {
+    background: #fff;
+    border: 30px solid #e8e8e8;
+
+    @include breakpoint(sm) {
+        border: 0;
+    }
+}
+
+.container.main {
+    max-width: 960px;
+}
+
+.page-head {
+    padding: 50px 0;
+
+    @include breakpoint(sm) {
+        padding: 30px 15px;
+    }
+}
+
+.column-media {
+    @include breakpoint(sm) {
+        padding: 0 15px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.column-content {
+    @include breakpoint(sm) {
+        padding: 0 15px;
+    }
+}
+
+/* Catgegory Box */
+.category-box h3 {
+    margin-top: 10px;
+}
+
+.category-box p {
+    margin: 20px 0;
+}
+
+/* Blockquote */
+.blockquote {    
+    padding: 15px 50px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.blockquote:first-child {
+    margin-top: 0;
+}
+
+.blockquote:last-child {
+    margin-bottom: 0;
+}
+
+.blockquote .quote {
+    color: #333;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.blockquote .signature {
+    font-size: 90%;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.blockquote .signature::before {
+    content: "\223C";
+}
+
+.blockquote::before, .blockquote::after {
+    font-family: Georgia, Times, serif;
+    font-size: 90px;
+    color: #ccc;
+}
+
+.blockquote::before {
+    content: "\0022";
+    position: absolute;
+    left: 0;
+    top: -30px;
+}
+
+.blockquote::after {
+    content: "\0022";
+    position: absolute;
+    bottom: -70px;
+    right: 0; 
+}
+
+/* Packages */
+.packages {
+    margin-top: 20px;
+}
+
+.package {
+    border: 1px solid #000;
+}
+
+.package-body {
+    padding: 15px;
+}
+
+.package-footer {
+    background: #f2f2f2;
+    padding: 15px;
+    text-align: center;
+}
+
+.package-footer h4 {
+    margin-bottom: 15px;
+}

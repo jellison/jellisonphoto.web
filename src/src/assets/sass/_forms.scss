@@ -1,0 +1,27 @@
+@import 'util';
+
+.label {
+    line-height: 1rem;
+
+    &:not(:last-child) {
+        margin-bottom: 0.3em;
+    }
+
+    .help {
+        display: inline;
+        font-weight: normal;
+        font-style: italic;
+    }
+}
+
+.field:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+.select {
+    width: 100%;
+}
+
+.select select {
+    width: 100%;
+}

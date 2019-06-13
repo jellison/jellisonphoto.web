@@ -130,7 +130,7 @@
                                 </ul>
                             </div>
                             <div class="package-footer">
-                                <h4>$1,400.00</h4>
+                                <h4>$1,550.00</h4>
                                 <a class="button bookNow" @click.prevent="onBookNow('Platinum')">Request Date</a>
                             </div>
                         </div>

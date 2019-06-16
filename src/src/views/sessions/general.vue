@@ -11,11 +11,11 @@
                     <div class="columns">
                         <div class="column">
                             <span class="subtitle">Price:</span>
-                            <h4>$150.00</h4>
+                            <h4>$100-165.00</h4>
                         </div>
                         <div class="column">
                             <span class="subtitle">Duration:</span>
-                            <h4>1 hour</h4>
+                            <h4>&frac12; - 1 hour</h4>
                         </div>
                         <div class="column">
                             <span class="subtitle">Delivery Time:</span>
@@ -26,13 +26,13 @@
                 <div class="column">
                     <div class="column-content">
                         <p>
-                            General Sessions apply to child/family, special event, or bridal/engagement photography sessions.
+                            General Sessions apply to child, family, or special event photography sessions.
                             All edited images delivered to you electronically with a print release.
                         </p>
                     </div>                    
                 </div>
             </div>
-            <hr>
+            <hr />            
         </div>
 
         <div class="container main">

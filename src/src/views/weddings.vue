@@ -47,7 +47,7 @@
                 <div class="column">
                     <div class="column-content">
                         <p>
-                            All packages come with all edited images on flash/thumb drive. All packages include an 80-minute travel
+                            All packages come with all edited images on flash/thumb drive. All packages include an 30-minute travel
                             allowance. Any additional travel is subject to additional fees. A non-refundable 30% deposit is due at
                             booking to hold your special day.
                         </p>

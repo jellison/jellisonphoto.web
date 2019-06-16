@@ -1,5 +1,11 @@
 @import 'util';
 
+form.main {
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
 .label {
     line-height: 1rem;
 

@@ -17,14 +17,14 @@
                         </p>
                     </div>
                 </div>
-            </div>            
+            </div>
             <form class="main">
                 <div class="columns">
                     <div class="column">
                         <div class="field">
                             <label class="label">Name</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="John Doe">
+                                <input class="input" type="text" placeholder="John Doe" v-model="fields.name">
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="john@johndoe.com">
+                                <input class="input" type="text" placeholder="john@johndoe.com" v-model="fields.email">
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                         <div class="field">
                             <label class="label">Phone</label>
                             <div class="control">
-                                <input class="input" type="email" placeholder="555-555-5555">
+                                <input class="input" type="email" placeholder="555-555-5555" v-model="fields.phone">
                             </div>
                         </div>
                     </div>
@@ -53,8 +53,8 @@
                             </label>
                             <div class="control">
                                 <div class="select">
-                                    <select>
-                                        <option>General Sessions</option>
+                                    <select v-model="fields.sessionType">
+                                        <option selected>General Sessions</option>
                                         <option>Senior sessions</option>
                                         <option>Newborn Sessions</option>
                                         <option>Mini Sessions</option>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="field">
                     <label class="label">Message</label>
-                    <textarea rows="6" class="textarea"></textarea>
+                    <textarea rows="6" class="textarea" v-model="fields.message"></textarea>
                 </div>
                 <div class="field">
                     <a class="button" @click.prevent="onSubmit">Submit</a>
@@ -89,8 +89,19 @@ export default {
         NavBar,
         FooterNav
     },
+    data() {
+      return {
+          fields: {
+              name: '',
+              email: '',
+              phone: '',
+              message:'',
+              sessionType: 'General Sessions'
+          }
+      }
+    },
     methods: {
-        onSubmit(evt) {            
+        onSubmit(evt) {
             axios
                 .post('https://api.darkstone.io/emails', { fields: this.fields, formId: 'a2cd0b46-b87e-4393-b4f4-7ef84e07112d' })
                 .then(res => {

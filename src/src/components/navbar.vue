@@ -24,7 +24,16 @@
                             <router-link to="/sessions/mini" active-class="is-active" class="navbar-item">Mini Sessions</router-link>
                         </div>
                     </div>
-                    <router-link to="/weddings" active-class="is-active" class="navbar-item">Weddings</router-link>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <span class="navbar-link">Weddings</span>
+
+                        <div class="navbar-dropdown">
+                            <router-link to="/weddings" active-class="is-active" class="navbar-item" exact>Packages</router-link>
+                            <router-link to="/weddings/gallery" active-class="is-active" class="navbar-item" exact>Gallery</router-link>
+                        </div>
+                    </div>
+
                     <router-link to="/faq" active-class="is-active" class="navbar-item">Tips / FAQ</router-link>
                     <router-link to="/about" active-class="is-active" class="navbar-item">About</router-link>
                     <router-link to="/contact" active-class="is-active" class="navbar-item">Contact</router-link>
@@ -64,7 +73,7 @@ export default {
 
     @include breakpoint(sm) {
         margin-bottom: 0;
-    }    
+    }
 
     &, & .navbar-dropdown {
         background: #000;

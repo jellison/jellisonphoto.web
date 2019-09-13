@@ -2,7 +2,7 @@
     <div class="masonry-container">
         <div class="masonry">
             <div class="masonry-item" :class="{ 'horizontal': image.orientation == 'horizontal', 'vertical': image.orientation == 'vertical' }" :key="image.url" v-for="image in images">
-                <a :href="image.url" @click.prevent="onImageClick">
+                <a :href="image.url" @click.prevent="onImageClick(image.url)">
                     <img :src="image.preview">
                     <span class="view-image">
                         <sup></sup>
@@ -17,8 +17,12 @@
 export default {
     props: ['images'],
     methods: {
-        onImageClick(evt) {
-            $.fancybox.open(evt.currentTarget, {});
+        onImageClick(url) {
+            console.log(this.fancyImages);
+            $.fancybox.open(this.fancyImages, {
+                index: this.fancyImages.findIndex(i => i.src === url),
+                loop: true
+            });
         }
     },
     mounted() {
@@ -30,6 +34,11 @@ export default {
         grid.imagesLoaded().progress(function() {
             grid.masonry("layout");
         });
+    },
+    computed: {
+        fancyImages: function() {
+          return this.images.map(i => ({src: i.url}));
+        }
     }
 };
 </script>
@@ -45,7 +54,7 @@ export default {
 }
 
 .masonry {
-    margin: -15px;   
+    margin: -15px;
 
     .masonry-item {
         padding: 15px;

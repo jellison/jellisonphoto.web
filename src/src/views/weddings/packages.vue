@@ -38,6 +38,9 @@
 
         <div class="container main">
             <masonry :images="images"></masonry>
+            <div class="has-text-centered mt-20">
+                <router-link to="/weddings/gallery" class="button">View Gallery</router-link>
+            </div>
         </div>
 
         <div class="container main">
@@ -54,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="columns packages">
                 <div class="column">
                     <div class="column-content">
@@ -78,7 +81,7 @@
                 </div>
                 <div class="column">
                     <div class="column-content">
-                        <div class="package">                        
+                        <div class="package">
                             <div class="package-body">
                                 <h2>Silver</h2>
                                 <ul>
@@ -146,10 +149,10 @@
 <script>
 import Vue from 'vue';
 
-import NavBar from '../components/navbar.vue';
-import FooterNav from '../components/footer.vue';
-import Masonry from '../components/masonry.vue';
-import WeddingModal from '../components/modals/wedding.vue';
+import NavBar from '../../components/navbar.vue';
+import FooterNav from '../../components/footer.vue';
+import Masonry from '../../components/masonry.vue';
+import WeddingModal from '../../components/modals/wedding.vue';
 
 export default {
     components: {
@@ -159,8 +162,8 @@ export default {
         return {
             images: [
                 { url: '/img/weddings/grid-03_full.jpg', preview: '/img/weddings/grid-03.jpg' },
-                { url: '/img/weddings/grid-02_full.jpg', preview: '/img/weddings/grid-02.jpg' },
-                { url: '/img/weddings/grid-01_full.jpg', preview: '/img/weddings/grid-01.jpg' },
+                { url: '/img/weddings/grid-11_full.jpg', preview: '/img/weddings/grid-11.jpg' },
+                { url: '/img/weddings/grid-14_full.jpg', preview: '/img/weddings/grid-14.jpg' },
                 { url: '/img/weddings/grid-04_full.jpg', preview: '/img/weddings/grid-04.jpg' },
                 { url: '/img/weddings/grid-06_full.jpg', preview: '/img/weddings/grid-06.jpg' },
                 { url: '/img/weddings/grid-07_full.jpg', preview: '/img/weddings/grid-07.jpg' },

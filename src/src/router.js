@@ -6,13 +6,14 @@ import General from './views/sessions/general.vue';
 import Mini from './views/sessions/mini.vue';
 import Newborn from './views/sessions/newborn.vue';
 import Senior from './views/sessions/senior.vue';
-import Weddings from './views/weddings.vue';
+import Weddings from './views/weddings/packages.vue';
+import WeddingsGallery from './views/weddings/gallery.vue';
 import Faq from './views/faq.vue';
 import About from './views/about.vue';
 import Contact from './views/contact.vue';
 import Form from './views/form.vue';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
     mode: 'history',
@@ -24,6 +25,7 @@ export default new Router({
         { path: '/sessions/newborn', name: 'newborn', component: Newborn },
         { path: '/sessions/senior', name: 'senior', component: Senior },
         { path: '/weddings', name: 'weddings', component: Weddings },
+        { path: '/weddings/gallery', name: 'weddings gallery', component: WeddingsGallery },
         { path: '/faq', name: 'faq', component: Faq },
         { path: '/about', name: 'about', component: About },
         { path: '/contact', name: 'contact', component: Contact },

@@ -4,6 +4,7 @@
 @import 'buttons';
 @import 'cards';
 @import 'forms';
+@import 'helpers';
 
 /* Banner */
 .banner {
@@ -71,7 +72,7 @@
 }
 
 /* Blockquote */
-.blockquote {    
+.blockquote {
     padding: 15px 50px;
     position: relative;
     margin: 20px 0;
@@ -118,7 +119,7 @@
     content: "\0022";
     position: absolute;
     bottom: -70px;
-    right: 0; 
+    right: 0;
 }
 
 /* Packages */

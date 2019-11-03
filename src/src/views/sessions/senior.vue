@@ -3,15 +3,15 @@
     <nav-bar></nav-bar>
 
     <div class="container main">
-      <img src="/img/senior/portfolio-header.jpg">
-      <hr>
+      <img src="/img/senior/portfolio-header.jpg" />
+      <hr />
       <h2>Senior Sessions</h2>
       <div class="columns">
         <div class="column">
           <div class="columns">
             <div class="column">
               <span class="subtitle">Price:</span>
-              <h4>$150-220.00</h4>
+              <h4>$150-250.00</h4>
             </div>
             <div class="column">
               <span class="subtitle">Duration:</span>
@@ -37,7 +37,7 @@
         <masonry :images="images"></masonry>
       </div>
 
-      <hr>
+      <hr />
 
       <div class="columns packages">
         <div class="column">

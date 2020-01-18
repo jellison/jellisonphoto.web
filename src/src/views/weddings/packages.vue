@@ -11,11 +11,11 @@
           <div class="columns">
             <div class="column">
               <span class="subtitle">Price:</span>
-              <h4>$800.00+</h4>
+              <h4>$890.00+</h4>
             </div>
             <div class="column">
               <span class="subtitle">Duration:</span>
-              <h4>4-8 hours</h4>
+              <h4>4-7 hours</h4>
             </div>
             <div class="column">
               <span class="subtitle">Delivery Time:</span>
@@ -73,7 +73,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$800.00</h4>
+                <h4>$890.00</h4>
                 <a class="button bookNow" @click.prevent="onBookNow('Basic')">Request Date</a>
               </div>
             </div>
@@ -93,7 +93,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$1,180.00</h4>
+                <h4>$1,320.00</h4>
                 <a class="button bookNow" @click.prevent="onBookNow('Silver')">Request Date</a>
               </div>
             </div>
@@ -113,7 +113,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$1,350.00</h4>
+                <h4>$1,520.00</h4>
                 <a class="button bookNow" @click.prevent="onBookNow('Gold')">Request Date</a>
               </div>
             </div>
@@ -125,7 +125,7 @@
               <div class="package-body">
                 <h2>Platinum</h2>
                 <ul>
-                  <li>8 hours coverage</li>
+                  <li>7 hours coverage</li>
                   <li>2 photographers</li>
                   <li>1 Engagement session</li>
                   <li class="is-hidden-touch">&nbsp;</li>
@@ -133,7 +133,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$1,700.00</h4>
+                <h4>$1,730.00</h4>
                 <a class="button bookNow" @click.prevent="onBookNow('Platinum')">Request Date</a>
               </div>
             </div>

@@ -11,7 +11,7 @@
           <div class="columns">
             <div class="column">
               <span class="subtitle">Price:</span>
-              <h4>$150-250.00</h4>
+              <h4>$165-265.00</h4>
             </div>
             <div class="column">
               <span class="subtitle">Duration:</span>
@@ -54,7 +54,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$150.00</h4>
+                <h4>$165.00</h4>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$200.00</h4>
+                <h4>$215.00</h4>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$250.00</h4>
+                <h4>$265.00</h4>
               </div>
             </div>
           </div>

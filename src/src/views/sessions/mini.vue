@@ -11,7 +11,7 @@
                     <div class="columns">
                         <div class="column">
                             <span class="subtitle">Price:</span>
-                            <h4>$55-65.00</h4>
+                            <h4>$75-100.00</h4>
                         </div>
                         <div class="column">
                             <span class="subtitle">Duration:</span>

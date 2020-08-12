@@ -11,7 +11,7 @@
           <div class="columns">
             <div class="column">
               <span class="subtitle">Price:</span>
-              <h4>$890.00+</h4>
+              <h4>$1,100.00+</h4>
             </div>
             <div class="column">
               <span class="subtitle">Duration:</span>
@@ -19,16 +19,14 @@
             </div>
             <div class="column">
               <span class="subtitle">Delivery Time:</span>
-              <h4>4 weeks</h4>
+              <h4>4-6 weeks</h4>
             </div>
           </div>
         </div>
         <div class="column">
           <div class="column-content">
             <p>
-              Your wedding day will go by in a flash. Make sure you remember every minute of it by inviting us to
-              become part of your special day. We will work hard for you to make sure that you completely
-              satisfied with your wedding day photos.
+              When the cake has been cut and the flowers have wilted, your photos will remain. Make sure you protect them by choosing a photographer you can trust to capture your wedding day memories for you to cherish for many years to come. Let my husband and I work to make sure your wedding photos are everything you've imagined.
             </p>
           </div>
         </div>
@@ -50,9 +48,7 @@
         <div class="column">
           <div class="column-content">
             <p>
-              All packages come with all edited images on flash/thumb drive. All packages include an 30-minute travel
-              allowance. Any additional travel is subject to additional fees. A non-refundable 30% deposit is due at
-              booking to hold your special day.
+              Our packages include all your edited images from the day that meet our quality control along with a print release for you to print as many images as you desire. To make sure you get a variety of images from your special day, all packages include a second shooter during the ceremony and reception. Additional wedding day hours can be added to any package, and a 30-minute travel allowance is included. A non-refundable 30% retainer is due at booking to hold your special day.
             </p>
           </div>
         </div>
@@ -73,7 +69,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$890.00</h4>
+                <h4>$1,100.00</h4>
                 <a class="button bookNow" @click.prevent="onBookNow('Basic')">Request Date</a>
               </div>
             </div>
@@ -85,7 +81,7 @@
               <div class="package-body">
                 <h2>Silver</h2>
                 <ul>
-                  <li>5 hours coverage</li>
+                  <li>4 hours coverage</li>
                   <li>2 photographers</li>
                   <li>1 engagement session</li>
                   <li style="margin-left: 55px">or</li>
@@ -93,7 +89,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$1,320.00</h4>
+                <h4>$1,290.00</h4>
                 <a class="button bookNow" @click.prevent="onBookNow('Silver')">Request Date</a>
               </div>
             </div>
@@ -105,7 +101,7 @@
               <div class="package-body">
                 <h2>Gold</h2>
                 <ul>
-                  <li>6 hours coverage</li>
+                  <li>5 hours coverage</li>
                   <li>2 photographers</li>
                   <li>1 engagement session</li>
                   <li style="margin-left: 55px">or</li>
@@ -113,7 +109,7 @@
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$1,520.00</h4>
+                <h4>$1,500.00</h4>
                 <a class="button bookNow" @click.prevent="onBookNow('Gold')">Request Date</a>
               </div>
             </div>
@@ -128,12 +124,12 @@
                   <li>7 hours coverage</li>
                   <li>2 photographers</li>
                   <li>1 Engagement session</li>
-                  <li class="is-hidden-touch">&nbsp;</li>
-                  <li class="is-hidden-touch">&nbsp;</li>
+                  <li style="margin-left: 55px">or</li>
+                  <li>+1 hour coverage</li>
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$1,730.00</h4>
+                <h4>$2,000.00</h4>
                 <a class="button bookNow" @click.prevent="onBookNow('Platinum')">Request Date</a>
               </div>
             </div>

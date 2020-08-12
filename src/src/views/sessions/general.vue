@@ -11,11 +11,11 @@
                     <div class="columns">
                         <div class="column">
                             <span class="subtitle">Price:</span>
-                            <h4>$100-175.00</h4>
+                            <h4>$120-200.00</h4>
                         </div>
                         <div class="column">
                             <span class="subtitle">Duration:</span>
-                            <h4>&frac12; - 1 hour</h4>
+                            <h4>25-50 min</h4>
                         </div>
                         <div class="column">
                             <span class="subtitle">Delivery Time:</span>

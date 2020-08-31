@@ -9,6 +9,8 @@
 /* Banner */
 .banner {
     background-color: #000;
+    font-family: $title-font;
+    font-weight: 200;
     font-size: 22px;
     color: #fff;
     padding: 15px;
@@ -36,6 +38,10 @@
 
 .container.main {
     max-width: 960px;
+
+    @include breakpoint(sm) {
+        padding: 15px;
+    }
 }
 
 .page-head {

@@ -15,7 +15,7 @@
             <div id="navItems" class="navbar-menu" :class="{ 'is-active': isActive }">
                 <div class="navbar-end">
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <span class="navbar-link">Sessions</span>
+                        <span class="navbar-link">Sessions / Investment</span>
 
                         <div class="navbar-dropdown">
                             <router-link to="/sessions/general" active-class="is-active" class="navbar-item">General Sessions</router-link>
@@ -66,6 +66,7 @@ export default {
 
 <style lang="scss">
 @import '../assets/sass/util';
+@import '../assets/sass/variables';
 
 .navbar.main {
     z-index: 1 !important;
@@ -79,12 +80,18 @@ export default {
         background: #000;
     }
 
+    .navbar-menu {
+        background: unset;
+    }
+
     .navbar-item,
     .navbar-link {
         color: #d3d3d3;
-        font-size: 15px;
-        font-weight: 600;
-        text-transform: uppercase;
+        font-size: 12px;
+        font-family: $title-font;
+        font-weight: 400;
+        text-transform: uppercase;        
+        letter-spacing: 0.05em;
     }
 
     .navbar-item {

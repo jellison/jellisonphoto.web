@@ -6,38 +6,84 @@
             <img src="/img/general/portfolio-header.jpg">
             <hr>
             <h2>General Sessions</h2>
-            <div class="columns">
-                <div class="column">
-                    <div class="columns">
-                        <div class="column">
-                            <span class="subtitle">Price:</span>
-                            <h4>$120-200.00</h4>
-                        </div>
-                        <div class="column">
-                            <span class="subtitle">Duration:</span>
-                            <h4>25-50 min</h4>
-                        </div>
-                        <div class="column">
-                            <span class="subtitle">Delivery Time:</span>
-                            <h4>2 weeks</h4>
-                        </div>
+            <p>
+                When you look at your walls, do you realize your family pictures need a little updating? If you're looking for a family photographer in Knoxville, Strawberry Plains, Sevierville, Jefferson City, or the surrounding area. I would love to help you update your memories! Time moves so quickly. You will never regret capturing those moments in time, but you will regret missing out. Invest in your memories, and you won't be disappointed.
+            </p>
+            <div class="mt-6">
+                <div class="columns">
+                    <div class="column is-two-fifths">
+                        <img src="/img/general/temp.jpg" />
                     </div>
-                </div>
-                <div class="column">
-                    <div class="column-content">
-                        <p>
-                            General Sessions apply to child, family, or special event photography sessions.
-                            All edited images delivered to you electronically with a print release.
-                        </p>
+                    <div class="column is-three-fifths">
+                        <nav class="level is-full-height">
+                            <div class="level-full">
+                                <div class="level-item">
+                                    <div>
+                                        <h3>Limited Edition Minis</h3>
+                                        <h5>$75-100</h5>
+                                        <p>
+                                            Limited edition minis are only offered 3-4 times a year on set days and times. Usually offered for Spring, Fall, and Christmas. Spots fill up quickly. Don't miss your chance to get into one of these sessions. Join our mailing list today and be the first to know about upcoming limited-edition minis.
+                                        </p>
+                                        <p class="has-text-centered"><button class="button">Join Mailing List</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>                
+            </div>
+            <div class="mt-6">
+                <div class="columns is-desktop">
+                    <div class="column is-three-fifths">
+                        <nav class="level is-full-height">
+                            <div class="level-full">
+                                <div class="level-item">
+                                    <div>
+                                        <h3>Half Sessions</h3>
+                                        <h5>$120</h5>
+                                        <p>
+                                            Half sessions are offered year around by appointment. They're great for small families that need just a few updated pictures.
+                                        </p>
+                                        <p class="has-text-centered"><button class="button">More Information</button></p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="column is-two-fifths is-hidden-touch">
+                        <img src="/img/general/temp.jpg" />
                     </div>                    
                 </div>
             </div>
-            <hr />            
-        </div>
-
-        <div class="container main">
-            <masonry :images="images"></masonry>
-        </div>
+            <div class="mt-6">
+                <div class="columns">
+                    <div class="column is-two-fifths is-hidden-touch">
+                        <img src="/img/general/temp.jpg" />
+                    </div>
+                    <div class="column is-three-fifths">
+                        <nav class="level is-full-height">
+                            <div class="level-full">
+                                <div class="level-item">
+                                    <div>
+                                        <h3>Full Sessions</h3>
+                                        <h5>$200</h5>
+                                        <p>
+                                            Full sessions are offered year around by appointment. Wanting a variety of images to capture your family milestones? This is your package!
+                                        </p>
+                                        <p class="has-text-centered"><button class="button">More Information</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>            
+                <p class="has-text-centered is-italic is-size-7 mt-3">
+                    All session fees include a sitting fee and digital images. Additional digital images and prints are available to purchase from your online gallery.
+                </p>
+            </div>
+        </div>        
 
         <footer-nav></footer-nav>
     </div>

@@ -23,3 +23,13 @@
         overflow: scroll;
     }
 }
+
+.level-full {
+  flex-basis: auto;
+  flex-grow: unset;
+  flex-shrink: unset;
+}
+
+.is-full-height {
+    height: 100%;
+}

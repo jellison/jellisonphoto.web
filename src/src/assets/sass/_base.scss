@@ -1,34 +1,44 @@
 @import 'util';
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:600');
-
-$accent-color: #7498bc;
+@import 'variables';
 
 body {
-    font-family: "Cormorant Garamond",Helvetica,Arial,sans-serif;
-    font-size: 20px;
-    color: #000;
+    font-family: $body-font;
+    font-size: 15px;
+    font-weight: 300;
+    color: #2d2d2d;
 }
 
 h2 {
-    color: #000;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 h3 {
-    color: #000;
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
 h4 {
     font-size: 26px;
-    font-weight: 600;
 }
 
-h2, h3, h4 {
+h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h2+h3, h2+h4, h2+h5, h3+h4, h3+h5 {
+    margin-top: -15px;
+}
+
+h2, h3, h4, h5 {
+    color: #2d2d2d;
+    font-family: $title-font;
+    font-weight: 300;
+    letter-spacing: 0.11em;
+    text-align: center;
+    text-transform: uppercase;
+
     @include breakpoint(sm) {
         text-align: center;
     }

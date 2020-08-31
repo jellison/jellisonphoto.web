@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <p class="has-text-muted">Copyright &copy; 2019 Jobrina Ellison. All Rights Reserved. Built with <i class="fas fa-heart"></i> by <a href="https://www.darkstone.io">Darkstone Software</a>.</p>
+            <p class="has-text-muted">Copyright &copy; 2019 Jobrina Ellison. All Rights Reserved.</p>
         </div>
     </footer>
 </template>
@@ -38,9 +38,11 @@ export default {};
 </script>
 
 <style lang="scss">
+@import '../assets/sass/variables';
 @import '../assets/sass/util';
 
 footer.main {
+    font-family: $title-font;
     font-size: 90%;
     margin-top: 40px;
     padding: 30px 0;
@@ -60,8 +62,12 @@ footer.main {
     .navbar-link {
         background: transparent;
         color: #000;
-        padding: 0;
+        font-size: 12px;
+        font-family: $title-font;        
+        letter-spacing: 0.05em;
         margin-left: 20px;
+        padding: 0;        
+        text-transform: uppercase;
     }
 
     .navbar-item:hover,

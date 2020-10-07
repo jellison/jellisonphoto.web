@@ -1,5 +1,5 @@
-@import 'util';
-@import 'variables';
+@import "util";
+@import "variables";
 
 body {
     font-family: $body-font;
@@ -27,11 +27,18 @@ h5 {
     margin-bottom: 10px;
 }
 
-h2+h3, h2+h4, h2+h5, h3+h4, h3+h5 {
+h2 + h3,
+h2 + h4,
+h2 + h5,
+h3 + h4,
+h3 + h5 {
     margin-top: -15px;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     color: #2d2d2d;
     font-family: $title-font;
     font-weight: 300;
@@ -48,12 +55,12 @@ hr {
     border-bottom: 2px solid #000;
 
     &.squiggles {
-        background: url('/img/separator.png') no-repeat center center;
+        background: url("/img/separator.png") no-repeat center center;
         border: 0;
         height: 8px;
         margin: 75px 0;
         width: 100%;
-    
+
         @include breakpoint(sm) {
             margin: 35px 0;
         }
@@ -90,4 +97,8 @@ sup {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.has-justified-center {
+    justify-content: center;
 }

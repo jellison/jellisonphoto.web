@@ -3,25 +3,49 @@
         <div class="container main">
             <div class="navbar-brand">
                 <router-link to="/" class="navbar-item">
-                    <img src="/img/logo-140.png">
+                    <img src="/img/logo.png" />
                 </router-link>
-                <a role="button" class="navbar-burger burger" :class="{ 'is-active': isActive }" data-target="navItems" @click.prevent="onBurgerClick">
+                <a
+                    role="button"
+                    class="navbar-burger burger"
+                    :class="{ 'is-active': isActive }"
+                    data-target="navItems"
+                    @click.prevent="onBurgerClick"
+                >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
 
-            <div id="navItems" class="navbar-menu" :class="{ 'is-active': isActive }">
+            <div
+                id="navItems"
+                class="navbar-menu"
+                :class="{ 'is-active': isActive }"
+            >
                 <div class="navbar-end">
                     <div class="navbar-item has-dropdown is-hoverable">
                         <span class="navbar-link">Sessions / Investment</span>
 
                         <div class="navbar-dropdown">
-                            <router-link to="/sessions/general" active-class="is-active" class="navbar-item">General Sessions</router-link>
-                            <router-link to="/sessions/senior" active-class="is-active" class="navbar-item">Senior Sessions</router-link>
-                            <router-link to="/sessions/newborn" active-class="is-active" class="navbar-item">Newborn Sessions</router-link>
-                            <router-link to="/sessions/mini" active-class="is-active" class="navbar-item">Mini Sessions</router-link>
+                            <router-link
+                                to="/sessions/regular"
+                                active-class="is-active"
+                                class="navbar-item"
+                                >Regular Sessions</router-link
+                            >
+                            <router-link
+                                to="/sessions/senior"
+                                active-class="is-active"
+                                class="navbar-item"
+                                >Senior Sessions</router-link
+                            >
+                            <router-link
+                                to="/sessions/studio"
+                                active-class="is-active"
+                                class="navbar-item"
+                                >Newborn and Studio Sessions</router-link
+                            >
                         </div>
                     </div>
 
@@ -29,18 +53,45 @@
                         <span class="navbar-link">Weddings</span>
 
                         <div class="navbar-dropdown">
-                            <router-link to="/weddings" active-class="is-active" class="navbar-item" exact>Packages</router-link>
-                            <router-link to="/weddings/gallery" active-class="is-active" class="navbar-item" exact>Gallery</router-link>
+                            <router-link
+                                to="/weddings"
+                                active-class="is-active"
+                                class="navbar-item"
+                                exact
+                                >Packages</router-link
+                            >
+                            <router-link
+                                to="/weddings/gallery"
+                                active-class="is-active"
+                                class="navbar-item"
+                                exact
+                                >Gallery</router-link
+                            >
                         </div>
                     </div>
 
-                    <router-link to="/faq" active-class="is-active" class="navbar-item">Tips / FAQ</router-link>
-                    <router-link to="/about" active-class="is-active" class="navbar-item">About</router-link>
-                    <router-link to="/contact" active-class="is-active" class="navbar-item">Contact</router-link>
-                    <a href="https://www.facebook.com/jellisonphotography" class="navbar-item">
+                    <router-link
+                        to="/about"
+                        active-class="is-active"
+                        class="navbar-item"
+                        >About</router-link
+                    >
+                    <router-link
+                        to="/contact"
+                        active-class="is-active"
+                        class="navbar-item"
+                        >Contact</router-link
+                    >
+                    <a
+                        href="https://www.facebook.com/jellisonphotography"
+                        class="navbar-item"
+                    >
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/jobrina.ellison" class="navbar-item">
+                    <a
+                        href="https://www.instagram.com/j.ellisonphotography"
+                        class="navbar-item"
+                    >
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
@@ -51,22 +102,22 @@
 
 <script>
 export default {
-    data(){
+    data() {
         return {
-            isActive: false
+            isActive: false,
         };
     },
     methods: {
-        onBurgerClick: function(){
+        onBurgerClick: function () {
             this.isActive = !this.isActive;
-        }
-    }
+        },
+    },
 };
 </script>
 
 <style lang="scss">
-@import '../assets/sass/util';
-@import '../assets/sass/variables';
+@import "../assets/sass/util";
+@import "../assets/sass/variables";
 
 .navbar.main {
     z-index: 1 !important;
@@ -76,7 +127,8 @@ export default {
         margin-bottom: 0;
     }
 
-    &, & .navbar-dropdown {
+    &,
+    & .navbar-dropdown {
         background: #000;
     }
 
@@ -90,7 +142,7 @@ export default {
         font-size: 12px;
         font-family: $title-font;
         font-weight: 400;
-        text-transform: uppercase;        
+        text-transform: uppercase;
         letter-spacing: 0.05em;
     }
 
@@ -98,14 +150,19 @@ export default {
         padding-left: 20px;
         padding-right: 20px;
 
-        &.is-active,
+        &.is-active:not(:active),
         &:hover,
         &:hover .navbar-link {
             color: #d3d3d3;
             background-color: #272727;
 
+            @include breakpoint(md) {
+                background-color: #272727;
+            }
+
             @include breakpoint(sm) {
-                &.has-dropdown > .navbar-link, &.has-dropdown {
+                &.has-dropdown > .navbar-link,
+                &.has-dropdown {
                     background-color: #000;
                 }
             }

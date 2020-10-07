@@ -2,39 +2,53 @@
     <div id="glide" class="glide">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-                <li class="glide__slide" :key="image"  v-for="image in images" :data-cover="image"></li>
+                <li
+                    class="glide__slide"
+                    :key="image"
+                    v-for="image in images"
+                    :data-cover="image"
+                ></li>
             </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                next
+            </button>
         </div>
         <div class="glide__bullets" data-glide-el="controls[nav]">
-            <button class="glide__bullet" :key="index" v-for="(image, index) in images" :data-glide-dir="`=${index}`"></button>
+            <button
+                class="glide__bullet"
+                :key="index"
+                v-for="(image, index) in images"
+                :data-glide-dir="`=${index}`"
+            ></button>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    props: ['images'],
+    props: ["images"],
     methods: {
         onResize() {
-            var idealRatio = 1.8 / 1;
+            var idealRatio = 1.7 / 1;
 
             var glide = document.getElementById("glide");
-            var windowRatio = window.innerWidth / 600;
+            var glideRatio = glide.offsetWidth / 600;
 
-            if (windowRatio > idealRatio) {
+            if (glideRatio > idealRatio) {
                 // very wide screen
-                glide.style.height = window.innerWidth / idealRatio + "px";
+                glide.style.height = glide.offsetWidth / idealRatio + "px";
             }
-        }
+        },
     },
     mounted() {
         window.addEventListener("resize", this.onResize);
 
-                // Get all "navbar-burger" elements
+        // Get all "navbar-burger" elements
         const $navbarBurgers = Array.prototype.slice.call(
             document.querySelectorAll(".navbar-burger"),
             0
@@ -43,7 +57,7 @@ export default {
         // Check if there are any navbar burgers
         if ($navbarBurgers.length > 0) {
             // Add a click event on each of them
-            $navbarBurgers.forEach(el => {
+            $navbarBurgers.forEach((el) => {
                 el.addEventListener("click", () => {
                     // Get the target from the "data-target" attribute
                     const target = el.dataset.target;
@@ -58,7 +72,7 @@ export default {
 
         const slides = document.querySelectorAll(".glide__slide");
 
-        slides.forEach(el => {
+        slides.forEach((el) => {
             const cover = el.dataset.cover;
             if (cover) {
                 el.style.background =
@@ -71,14 +85,14 @@ export default {
             type: "carousel",
             startAt: 0,
             perView: 1,
-            autoplay: 5000
+            // autoplay: 5000
         }).mount();
 
         window.dispatchEvent(new Event("resize"));
     },
     beforeDestroy() {
         window.removeEventListener("resize", this.onResize);
-    }
+    },
 };
 </script>
 

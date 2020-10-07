@@ -1,7 +1,7 @@
 <template>
     <div>
         <p class="control has-icons-right">
-            <input ref="input" class="input" v-model="value">
+            <input ref="input" class="input" v-model="value" />
             <span class="icon is-small is-right">
                 <i class="fas fa-calendar-alt"></i>
             </span>
@@ -22,7 +22,7 @@ export default {
                     "Wednesday",
                     "Thursday",
                     "Friday",
-                    "Saturday"
+                    "Saturday",
                 ],
                 daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
                 daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
@@ -38,7 +38,7 @@ export default {
                     "September",
                     "October",
                     "November",
-                    "December"
+                    "December",
                 ],
                 monthsShort: [
                     "Jan",
@@ -52,13 +52,13 @@ export default {
                     "Sep",
                     "Oct",
                     "Nov",
-                    "Dec"
+                    "Dec",
                 ],
                 today: "Today",
                 clear: "Clear",
                 dateFormat: "mm/dd/yyyy",
                 timeFormat: "hh:ii aa",
-                firstDay: 0
+                firstDay: 0,
             };
         }
 
@@ -66,13 +66,13 @@ export default {
 
         $(this.$refs.input).datepicker({
             language: "en",
+            autoClose: true,
             onSelect: function onSelect(fd, date) {
                 $this.$emit("input", fd);
-            }
+            },
         });
-    }
+    },
 };
 </script>
 
-<style>
-</style>
+<style></style>

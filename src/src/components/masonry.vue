@@ -1,9 +1,17 @@
 <template>
     <div class="masonry-container">
         <div class="masonry">
-            <div class="masonry-item" :class="{ 'horizontal': image.orientation == 'horizontal', 'vertical': image.orientation == 'vertical' }" :key="image.url" v-for="image in images">
+            <div
+                class="masonry-item"
+                :class="{
+                    horizontal: image.orientation == 'horizontal',
+                    vertical: image.orientation == 'vertical',
+                }"
+                :key="image.url"
+                v-for="image in images"
+            >
                 <a :href="image.url" @click.prevent="onImageClick(image.url)">
-                    <img :src="image.preview">
+                    <img :src="image.preview" />
                     <span class="view-image">
                         <sup></sup>
                     </span>
@@ -15,49 +23,57 @@
 
 <script>
 export default {
-    props: ['images'],
+    props: ["images"],
     methods: {
         onImageClick(url) {
             console.log(this.fancyImages);
             $.fancybox.open(this.fancyImages, {
-                index: this.fancyImages.findIndex(i => i.src === url),
-                loop: true
+                index: this.fancyImages.findIndex((i) => i.src === url),
+                loop: true,
             });
-        }
+        },
     },
     mounted() {
         var grid = $(".masonry").masonry({
             itemSelector: ".masonry-item",
-            percentPosition: true
+            percentPosition: true,
         });
 
-        grid.imagesLoaded().progress(function() {
+        grid.imagesLoaded().progress(function () {
             grid.masonry("layout");
         });
     },
     computed: {
-        fancyImages: function() {
-          return this.images.map(i => ({src: i.url}));
-        }
-    }
+        fancyImages: function () {
+            return this.images.map((i) => ({ src: i.url }));
+        },
+    },
 };
 </script>
 
 <style lang="scss">
-@import '../assets/sass/util';
+@import "../assets/sass/util";
+
+$grid-padding: 5px;
 
 .masonry-container {
     @include breakpoint(sm) {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: $grid-padding;
+        padding-right: $grid-padding;
+
+        .masonry {
+            .masonry-item {
+                width: 100%;
+            }
+        }
     }
 }
 
 .masonry {
-    margin: -15px;
+    margin: -$grid-padding;
 
     .masonry-item {
-        padding: 15px;
+        padding: $grid-padding;
         width: 33.33333%;
 
         & > a {
@@ -70,6 +86,7 @@ export default {
 
             & > img {
                 display: block;
+                width: 100%;
             }
         }
     }

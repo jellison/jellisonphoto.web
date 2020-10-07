@@ -3,9 +3,9 @@
         <nav-bar></nav-bar>
 
         <div class="container main">
-            <hr>
+            <hr />
             <h2>Wedding Gallery</h2>
-            <hr>
+            <hr />
         </div>
 
         <div class="container main">
@@ -17,79 +17,385 @@
 </template>
 
 <script>
-  import Vue from 'vue';
+import Vue from "vue";
 
-  import NavBar from '../../components/navbar.vue';
-  import FooterNav from '../../components/footer.vue';
-  import Masonry from '../../components/masonry.vue';
-  import WeddingModal from '../../components/modals/wedding.vue';
+import NavBar from "../../components/navbar.vue";
+import FooterNav from "../../components/footer.vue";
+import Masonry from "../../components/masonry.vue";
 
-  export default {
+export default {
     components: {
-      NavBar, FooterNav, Masonry
+        NavBar,
+        FooterNav,
+        Masonry,
     },
     data() {
-      return {
-        images: [
-          { url: '/img/weddings/grid-09_full.jpg', preview: '/img/weddings/grid-09.jpg' },
-          { url: '/img/weddings/grid-10_full.jpg', preview: '/img/weddings/grid-10.jpg' },
-          { url: '/img/weddings/grid-11_full.jpg', preview: '/img/weddings/grid-11.jpg' },
-          { url: '/img/weddings/grid-12_full.jpg', preview: '/img/weddings/grid-12.jpg' },
-          { url: '/img/weddings/grid-13_full.jpg', preview: '/img/weddings/grid-13.jpg' },
-          { url: '/img/weddings/grid-16_full.jpg', preview: '/img/weddings/grid-16.jpg' },
-          { url: '/img/weddings/grid-14_full.jpg', preview: '/img/weddings/grid-14.jpg' },
-          { url: '/img/weddings/grid-15_full.jpg', preview: '/img/weddings/grid-15.jpg' },
-          { url: '/img/weddings/grid-17_full.jpg', preview: '/img/weddings/grid-17.jpg' },
-          { url: '/img/weddings/grid-18_full.jpg', preview: '/img/weddings/grid-18.jpg' },
-          { url: '/img/weddings/grid-19_full.jpg', preview: '/img/weddings/grid-19.jpg' },
-          { url: '/img/weddings/grid-20_full.jpg', preview: '/img/weddings/grid-20.jpg' },
-          { url: '/img/weddings/grid-50_full.jpg', preview: '/img/weddings/grid-50.jpg' },
-          { url: '/img/weddings/grid-51_full.jpg', preview: '/img/weddings/grid-51.jpg' },
-          { url: '/img/weddings/grid-21_full.jpg', preview: '/img/weddings/grid-21.jpg' },
-          { url: '/img/weddings/grid-22_full.jpg', preview: '/img/weddings/grid-22.jpg' },
-          { url: '/img/weddings/grid-23_full.jpg', preview: '/img/weddings/grid-23.jpg' },
-          { url: '/img/weddings/grid-24_full.jpg', preview: '/img/weddings/grid-24.jpg' },
-          { url: '/img/weddings/grid-25_full.jpg', preview: '/img/weddings/grid-25.jpg' },
-          { url: '/img/weddings/grid-26_full.jpg', preview: '/img/weddings/grid-26.jpg' },
-          { url: '/img/weddings/grid-27_full.jpg', preview: '/img/weddings/grid-27.jpg' },
-          { url: '/img/weddings/grid-28_full.jpg', preview: '/img/weddings/grid-28.jpg' },
-          { url: '/img/weddings/grid-29_full.jpg', preview: '/img/weddings/grid-29.jpg' },
-          { url: '/img/weddings/grid-30_full.jpg', preview: '/img/weddings/grid-30.jpg' },
-          { url: '/img/weddings/grid-31_full.jpg', preview: '/img/weddings/grid-31.jpg' },
-          { url: '/img/weddings/grid-32_full.jpg', preview: '/img/weddings/grid-32.jpg' },
-          { url: '/img/weddings/grid-33_full.jpg', preview: '/img/weddings/grid-33.jpg' },
-          { url: '/img/weddings/grid-34_full.jpg', preview: '/img/weddings/grid-34.jpg' },
-          { url: '/img/weddings/grid-35_full.jpg', preview: '/img/weddings/grid-35.jpg' },
-          { url: '/img/weddings/grid-36_full.jpg', preview: '/img/weddings/grid-36.jpg' },
-          { url: '/img/weddings/grid-37_full.jpg', preview: '/img/weddings/grid-37.jpg' },
-          { url: '/img/weddings/grid-38_full.jpg', preview: '/img/weddings/grid-38.jpg' },
-          { url: '/img/weddings/grid-39_full.jpg', preview: '/img/weddings/grid-39.jpg' },
-          { url: '/img/weddings/grid-40_full.jpg', preview: '/img/weddings/grid-40.jpg' },
-          { url: '/img/weddings/grid-41_full.jpg', preview: '/img/weddings/grid-41.jpg' },
-          { url: '/img/weddings/grid-42_full.jpg', preview: '/img/weddings/grid-42.jpg' },
-          { url: '/img/weddings/grid-43_full.jpg', preview: '/img/weddings/grid-43.jpg' },
-          { url: '/img/weddings/grid-44_full.jpg', preview: '/img/weddings/grid-44.jpg' },
-          { url: '/img/weddings/grid-45_full.jpg', preview: '/img/weddings/grid-45.jpg' },
-          { url: '/img/weddings/grid-46_full.jpg', preview: '/img/weddings/grid-46.jpg' },
-          { url: '/img/weddings/grid-48_full.jpg', preview: '/img/weddings/grid-48.jpg' },
-          { url: '/img/weddings/grid-47_full.jpg', preview: '/img/weddings/grid-47.jpg' },
-          { url: '/img/weddings/grid-49_full.jpg', preview: '/img/weddings/grid-49.jpg' },
-        ]
-      }
+        return {
+            images: [
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-14-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-14.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-02-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-02.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-03-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-03.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-04-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-04.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-05-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-05.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-06-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-06.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-07-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-07.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-08-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-08.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-09-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-09.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-10-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-10.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-11-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-11.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-12-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-12.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-13-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-13.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-01-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-01.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-15-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-15.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-16-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-16.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-17-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-17.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-18-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-18.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-19-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-19.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-20-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-20.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-21-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-21.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-22-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-22.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-23-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-23.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-24-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-24.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-25-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-25.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-26-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-26.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-27-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-27.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-28-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-28.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-29-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-29.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-30-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-30.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-31-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-31.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-32-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-32.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-33-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-33.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-34-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-34.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-35-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-35.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-36-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-36.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-37-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-37.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-38-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-38.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-39-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-39.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-40-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-40.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-41-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-41.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-42-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-42.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-43-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-43.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-44-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-44.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-45-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-45.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-46-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-46.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-47-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-47.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-48-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-48.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-49-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-49.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-50-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-50.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-51-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-51.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-52-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-52.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-53-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-53.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-54-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-54.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-55-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-55.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-56-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-56.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-57-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-57.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-58-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-58.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-59-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-59.jpg",
+                },
+                {
+                    url:
+                        "/img/weddings/Knoxville_Wedding_Photographer-60-full.jpg",
+                    preview:
+                        "/img/weddings/Knoxville_Wedding_Photographer-60.jpg",
+                },
+            ],
+        };
     },
-    methods: {
-      onBookNow(selectedPackage){
-        var modalClass = Vue.extend(WeddingModal);
-        var modal = new modalClass({
-          propsData: { defaultPackage: selectedPackage }
-        });
-
-        modal.$mount();
-        this.$refs.container.appendChild(modal.$el);
-      }
-    }
-  };
+};
 </script>
 
-<style>
-</style>
+<style></style>

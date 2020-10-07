@@ -1,4 +1,8 @@
-@import 'util';
+@import "util";
+
+.navbar-item img {
+    max-height: 3rem;
+}
 
 .modal {
     .modal-background {
@@ -9,7 +13,8 @@
 
     .modal-close {
         @include breakpoint(xs) {
-            &:before, &:after {
+            &:before,
+            &:after {
                 background-color: #000;
             }
         }
@@ -24,10 +29,29 @@
     }
 }
 
+.level {
+    &.has-items-centered {
+        justify-content: center;
+
+        .level-item + .level-item {
+            margin-left: 1em;
+
+            @include breakpoint(xs) {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.button + .button {
+    margin-left: 10px;
+}
+
 .level-full {
-  flex-basis: auto;
-  flex-grow: unset;
-  flex-shrink: unset;
+    flex-basis: auto;
+    flex-grow: unset;
+    flex-shrink: unset;
+    width: 100%;
 }
 
 .is-full-height {

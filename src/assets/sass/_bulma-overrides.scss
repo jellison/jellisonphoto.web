@@ -1,0 +1,59 @@
+@import "util";
+
+.navbar-item img {
+    max-height: 3rem;
+}
+
+.modal {
+    .modal-background {
+        @include breakpoint(xs) {
+            background: #fff;
+        }
+    }
+
+    .modal-close {
+        @include breakpoint(xs) {
+            &:before,
+            &:after {
+                background-color: #000;
+            }
+        }
+    }
+
+    .modal-content {
+        max-height: calc(100vh - 40px);
+    }
+
+    .modal-card {
+        overflow: scroll;
+    }
+}
+
+.level {
+    &.has-items-centered {
+        justify-content: center;
+
+        .level-item + .level-item {
+            margin-left: 1em;
+
+            @include breakpoint(xs) {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.button + .button {
+    margin-left: 10px;
+}
+
+.level-full {
+    flex-basis: auto;
+    flex-grow: unset;
+    flex-shrink: unset;
+    width: 100%;
+}
+
+.is-full-height {
+    height: 100%;
+}

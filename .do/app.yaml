@@ -1,9 +1,8 @@
 name: jellisonphoto.web
-static_sites:
-  - dockerfile_path: Dockerfile
+services:
+  - dockerfile_path: dockerfile
     github:
       branch: master
       deploy_on_push: true
       repo: jellison/jellisonphoto.web
     name: jellisonphoto.web
-    output_dir: /app/dist

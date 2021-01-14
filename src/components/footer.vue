@@ -150,7 +150,7 @@ footer.main {
         padding-right: 2em !important;
 
         &::after {
-            border-color: #7498bc !important;
+            border-color: $accent-color !important;
             margin-top: -0.575em;
             right: 0.5em;
         }

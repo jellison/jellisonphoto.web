@@ -272,8 +272,9 @@ export default {
             this.fields.package = selected;
         },
         submitEmail(evt) {
+            const baseUrl = process.env.API_URL;
             axios
-                .post("https://api.darkstone.io/emails", {
+                .post(`${baseUrl}/emails`, {
                     fields: this.fields,
                     formId: "a2cd0b46-b87e-4393-b4f4-7ef84e07112d",
                 })
@@ -291,7 +292,7 @@ export default {
         joinList(evt) {
             axios
                 .post(
-                    `https://api.darkstone.io/emails/lists/${this.mailingList.id}`,
+                    `${baseUrl}/emails/lists/${this.mailingList.id}`,
                     {
                         name: this.fields.name,
                         email: this.fields.email,

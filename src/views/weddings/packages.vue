@@ -29,7 +29,7 @@
                                 </ul>
                             </div>
                             <div class="package-footer">
-                                <h4>$1,100.00</h4>
+                                <h4>$1,200.00</h4>
                                 <router-link
                                     class="button bookNow"
                                     tag="a"
@@ -61,7 +61,7 @@
                                 </ul>
                             </div>
                             <div class="package-footer">
-                                <h4>$1,290.00</h4>
+                                <h4>$1,425.00</h4>
                                 <router-link
                                     class="button bookNow"
                                     tag="a"
@@ -93,7 +93,7 @@
                                 </ul>
                             </div>
                             <div class="package-footer">
-                                <h4>$1,500.00</h4>
+                                <h4>$1,680.00</h4>
                                 <router-link
                                     class="button bookNow"
                                     tag="a"
@@ -125,7 +125,7 @@
                                 </ul>
                             </div>
                             <div class="package-footer">
-                                <h4>$2,000.00</h4>
+                                <h4>$2,200.00</h4>
                                 <router-link
                                     class="button bookNow"
                                     tag="a"

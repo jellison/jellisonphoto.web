@@ -1,4 +1,17 @@
 @import "util";
+@import "variables";
+
+a {
+    color: $accent-color;
+
+    &:hover {
+        color: darken($accent-color, 10%);
+    }
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: $accent-color;
+}
 
 .navbar-item img {
     max-height: 3rem;

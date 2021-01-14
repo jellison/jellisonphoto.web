@@ -177,7 +177,7 @@ export default {
         padding-right: 2em !important;
 
         &::after {
-            border-color: #7498bc !important;
+            border-color: $accent-color !important;
             right: 0.5em;
         }
     }

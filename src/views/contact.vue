@@ -221,10 +221,11 @@ import NavBar from "../components/navbar.vue";
 import FooterNav from "../components/footer.vue";
 import FlatSelect from "../components/forms/flat-select.vue";
 
+const baseUrl = process.env.VUE_APP_API_URL;
 const mailingLists = {
     // mini: "ea348572-e504-4163-a51a-edf96d9aab5e",
     mini: {
-        id: "1ab0727a-4f34-4582-9f54-d123c2cf59f2",
+        id: "ea348572-e504-4163-a51a-edf96d9aab5e",
         intro:
             "Mini session slots are always limited and fill up fast. They can fill up within minutes! Don't miss your opportunity to get in on limited edition minis that only happen 3-4 times a year. Join the mailing list to be the first to know about the release dates for minis and other special promotions.",
         title: "Join the Mini Session mailing list!",
@@ -271,8 +272,7 @@ export default {
         selectPackage(selected) {
             this.fields.package = selected;
         },
-        submitEmail(evt) {
-            const baseUrl = process.env.VUE_APP_API_URL;
+        submitEmail(evt) {            
             axios
                 .post(`${baseUrl}/emails`, {
                     fields: this.fields,

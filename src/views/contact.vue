@@ -272,7 +272,7 @@ export default {
             this.fields.package = selected;
         },
         submitEmail(evt) {
-            const baseUrl = process.env.API_URL;
+            const baseUrl = process.env.VUE_APP_API_URL;
             axios
                 .post(`${baseUrl}/emails`, {
                     fields: this.fields,

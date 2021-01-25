@@ -1,30 +1,31 @@
-@import "util";
-@import "variables";
+@import 'util';
+@import 'variables';
+@import 'spacing';
 
 body {
-    font-family: $body-font;
-    font-size: 15px;
-    font-weight: 300;
-    color: #2d2d2d;
+  font-family: $body-font;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2d2d2d;
 }
 
 h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 h4 {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 h2 + h3,
@@ -32,73 +33,79 @@ h2 + h4,
 h2 + h5,
 h3 + h4,
 h3 + h5 {
-    margin-top: -15px;
+  margin-top: -15px;
 }
 
 h2,
 h3,
 h4,
 h5 {
-    color: #2d2d2d;
-    font-family: $title-font;
-    font-weight: 300;
-    letter-spacing: 0.11em;
-    text-align: center;
-    text-transform: uppercase;
+  color: #2d2d2d;
+  font-family: $title-font;
+  font-weight: 300;
+  letter-spacing: 0.11em;
+  text-align: center;
+  text-transform: uppercase;
 
-    @include breakpoint(sm) {
-        text-align: center;
-    }
+  @include breakpoint(sm) {
+    text-align: center;
+  }
 }
 
 hr {
-    border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000;
 
-    &.squiggles {
-        background: url("/img/separator.png") no-repeat center center;
-        border: 0;
-        height: 8px;
-        margin: 75px 0;
-        width: 100%;
+  &.squiggles {
+    background: url('/img/separator.png') no-repeat center center;
+    border: 0;
+    height: 8px;
+    margin: 75px 0;
+    width: 100%;
 
-        @include breakpoint(sm) {
-            margin: 35px 0;
-        }
+    @include breakpoint(sm) {
+      margin: 35px 0;
     }
+  }
 
-    &.slim {
-        border-bottom: 1px solid #bfbfbf;
-        margin: 10px 0;
-    }
+  &.short {
+    border-bottom: 1px solid #bfbfbf;
+    margin: 75px auto;
+    width: 200px;
+  }
+
+  &.slim {
+    border-bottom: 1px solid #bfbfbf;
+    margin: 10px 0;
+  }
 }
 
 p + p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 span.subtitle {
-    color: #555;
+  color: #555;
 
-    @include breakpoint(sm) {
-        display: block;
-        margin-bottom: 0 !important;
-        text-align: center;
-    }
+  @include breakpoint(sm) {
+    display: block;
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
 }
 
 sup {
-    font-size: 70%;
-    position: relative;
-    top: 0.2em;
+  font-size: 70%;
+  position: relative;
+  top: 0.2em;
 }
 
 .is-centered-mobile {
-    @include breakpoint(sm) {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  @include breakpoint(sm) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .has-justified-center {
-    justify-content: center;
+  justify-content: center;
 }

@@ -1,72 +1,72 @@
-@import "util";
-@import "variables";
+@import 'util';
+@import 'variables';
 
 a {
-    color: $accent-color;
+  color: $accent-color;
 
-    &:hover {
-        color: darken($accent-color, 10%);
-    }
+  &:hover {
+    color: darken($accent-color, 10%);
+  }
 }
 
 .select:not(.is-multiple):not(.is-loading)::after {
-    border-color: $accent-color;
+  border-color: $accent-color;
 }
 
 .navbar-item img {
-    max-height: 3rem;
+  max-height: 3rem;
 }
 
 .modal {
-    .modal-background {
-        @include breakpoint(xs) {
-            background: #fff;
-        }
+  .modal-background {
+    @include breakpoint(xs) {
+      background: #fff;
     }
+  }
 
-    .modal-close {
-        @include breakpoint(xs) {
-            &:before,
-            &:after {
-                background-color: #000;
-            }
-        }
+  .modal-close {
+    @include breakpoint(xs) {
+      &:before,
+      &:after {
+        background-color: #000;
+      }
     }
+  }
 
-    .modal-content {
-        max-height: calc(100vh - 40px);
-    }
+  .modal-content {
+    max-height: calc(100vh - 40px);
+  }
 
-    .modal-card {
-        overflow: scroll;
-    }
+  .modal-card {
+    overflow: scroll;
+  }
 }
 
 .level {
-    &.has-items-centered {
-        justify-content: center;
+  &.has-items-centered {
+    justify-content: center;
 
-        .level-item + .level-item {
-            margin-left: 1em;
+    .level-item + .level-item {
+      margin-left: 1em;
 
-            @include breakpoint(xs) {
-                margin: 0;
-            }
-        }
+      @include breakpoint(xs) {
+        margin: 0;
+      }
     }
+  }
 }
 
 .button + .button {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .level-full {
-    flex-basis: auto;
-    flex-grow: unset;
-    flex-shrink: unset;
-    width: 100%;
+  flex-basis: auto;
+  flex-grow: unset;
+  flex-shrink: unset;
+  width: 100%;
 }
 
 .is-full-height {
-    height: 100%;
+  height: 100%;
 }

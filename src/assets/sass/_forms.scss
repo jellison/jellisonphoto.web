@@ -1,33 +1,33 @@
-@import "util";
+@import 'util';
 
 form.main {
-    &:first-child {
-        margin-top: 0;
-    }
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .label {
-    line-height: 1rem;
+  line-height: 1rem;
 
-    &:not(:last-child) {
-        margin-bottom: 0.3em;
-    }
+  &:not(:last-child) {
+    margin-bottom: 0.3em;
+  }
 
-    .help {
-        display: inline;
-        font-weight: normal;
-        font-style: italic;
-    }
+  .help {
+    display: inline;
+    font-weight: normal;
+    font-style: italic;
+  }
 }
 
 .field:not(:last-child) {
-    margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .select {
-    width: 100%;
+  width: 100%;
 }
 
 .select select {
-    width: 100%;
+  width: 100%;
 }

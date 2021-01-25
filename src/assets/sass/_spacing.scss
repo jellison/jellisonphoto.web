@@ -1,0 +1,33 @@
+$baseValue: 10px;
+
+.mt1 {
+  margin-top: $baseValue;
+}
+
+.mt2 {
+  margin-top: $baseValue * 2;
+}
+
+.mt3 {
+  margin-top: $baseValue * 3;
+}
+
+.mt4 {
+  margin-top: $baseValue * 4;
+}
+
+.mb1 {
+  margin-bottom: $baseValue;
+}
+
+.mb2 {
+  margin-bottom: $baseValue * 2;
+}
+
+.mb3 {
+  margin-bottom: $baseValue * 3;
+}
+
+.mb4 {
+  margin-bottom: $baseValue * 4;
+}

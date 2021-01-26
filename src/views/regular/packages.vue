@@ -13,52 +13,20 @@
         your memories, and you won't be disappointed.
       </p>
       <div class="mt-6">
-        <div class="columns">
-          <div class="column is-two-fifths">
-            <img src="/img/regular/focal-03.jpg" />
-          </div>
-          <div class="column is-three-fifths">
-            <nav class="level is-full-height">
-              <div class="level-full">
-                <div class="level-item">
-                  <div>
-                    <h3>Limited Edition Minis</h3>
-                    <h5>$75-100</h5>
-                    <p>
-                      Limited edition minis are only offered 3-4 times a year on set days and times. Usually offered for Spring, Fall, and
-                      Christmas. Spots fill up quickly. Don't miss your chance to get into one of these sessions. Join our mailing list
-                      today and be the first to know about upcoming limited-edition minis.
-                    </p>
-                    <p class="has-text-centered">
-                      <router-link
-                        class="button"
-                        tag="button"
-                        :to="{
-                          path: '/contact',
-                          query: {
-                            formOnly: 'true',
-                            list: 'mini'
-                          }
-                        }"
-                        >Join Mailing List</router-link
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="mt-6">
         <div class="columns is-desktop">
+          <div class="column is-two-fifths is-hidden-touch">
+            <img src="/img/regular/focal-01.jpg" />
+          </div>
           <div class="column is-three-fifths">
             <nav class="level is-full-height">
               <div class="level-full">
                 <div class="level-item">
                   <div>
-                    <h3>Half Sessions</h3>
-                    <h5>$120</h5>
+                    <h3>Regular Sessions</h3>
+                    <h5>starting at $120</h5>
+                    <p class="is-hidden-desktop">
+                      <img src="/img/regular/focal-01.jpg" />
+                    </p>
                     <p>
                       Half sessions are offered year around by appointment. They're great for small families that need just a few updated
                       pictures.
@@ -83,29 +51,26 @@
               </div>
             </nav>
           </div>
-          <div class="column is-two-fifths is-hidden-touch">
-            <img src="/img/regular/focal-01.jpg" />
-          </div>
         </div>
       </div>
       <div class="mt-6">
         <div class="columns">
-          <div class="column is-two-fifths is-hidden-touch">
-            <img src="/img/regular/focal-02.jpg" />
-          </div>
           <div class="column is-three-fifths">
             <nav class="level is-full-height">
               <div class="level-full">
                 <div class="level-item">
                   <div>
-                    <h3>Full Sessions</h3>
-                    <h5>$200</h5>
+                    <h3>Limited Edition Minis</h3>
+                    <h5>$75-100</h5>
+                    <p class="is-hidden-desktop">
+                      <img src="/img/regular/focal-03.jpg" />
+                    </p>
                     <p>
-                      Full sessions are offered year around by appointment. Wanting a variety of images to capture your family milestones?
-                      This is your package!
+                      Limited edition minis are only offered 3-4 times a year on set days and times. Usually offered for Spring, Fall, and
+                      Christmas. Spots fill up quickly. Don't miss your chance to get into one of these sessions. Join our mailing list
+                      today and be the first to know about upcoming limited-edition minis.
                     </p>
                     <p class="has-text-centered">
-                      <router-link class="button is-light" tag="button" to="/sessions/regular/gallery">View Gallery</router-link>
                       <router-link
                         class="button"
                         tag="button"
@@ -113,10 +78,10 @@
                           path: '/contact',
                           query: {
                             formOnly: 'true',
-                            sessionType: 'Full Session'
+                            list: 'mini'
                           }
                         }"
-                        >Request a Date</router-link
+                        >Join Mailing List</router-link
                       >
                     </p>
                   </div>
@@ -124,8 +89,10 @@
               </div>
             </nav>
           </div>
+          <div class="column is-two-fifths is-hidden-touch">
+            <img src="/img/regular/focal-03.jpg" />
+          </div>
         </div>
-        <package-disclaimer></package-disclaimer>
       </div>
     </div>
 

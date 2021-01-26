@@ -24,7 +24,7 @@
         </div>
         <div class="column">
           <router-link tag="a" to="/sessions/studio/gallery">
-            <img src="/img/studio/focal-01.jpg" />
+            <img src="/img/studio/focal-05.jpg" />
             <h5>Newborn &amp; Studio<br />Sessions</h5>
           </router-link>
         </div>

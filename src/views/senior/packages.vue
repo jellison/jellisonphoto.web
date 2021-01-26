@@ -18,7 +18,7 @@
       <p></p>
       <div class="mt-6">
         <div class="columns">
-          <div class="column is-two-fifths">
+          <div class="column is-two-fifths is-hidden-touch">
             <img src="/img/senior/focal-01.jpg" />
           </div>
           <div class="column is-three-fifths">
@@ -28,6 +28,9 @@
                   <div>
                     <h3>Basic Session</h3>
                     <h5>$185</h5>
+                    <p class="is-hidden-desktop">
+                      <img src="/img/senior/focal-01.jpg" />
+                    </p>
                     <p>
                       The basic session offers a veriety of shots at one location to give your senior a memorable senior experience and
                       pictures they will love.
@@ -63,6 +66,9 @@
                   <div>
                     <h3>Deluxe Session</h3>
                     <h5>$225</h5>
+                    <p class="is-hidden-desktop">
+                      <img src="/img/senior/focal-02.jpg" />
+                    </p>
                     <p>
                       The dexluse session offers a larger variety of shots with theh option of two locations. With more digitals included in
                       the package, this session gives seniors the specialized feel that they're looking for.
@@ -104,6 +110,9 @@
                   <div>
                     <h3>Platinum Session</h3>
                     <h5>$285</h5>
+                    <p class="is-hidden-desktop">
+                      <img src="/img/senior/focal-03.jpg" />
+                    </p>
                     <p>
                       Senior year only comes around once. Give your senior the ultimate senior session with our platinum session. This
                       session features two locations and the largest digital package.

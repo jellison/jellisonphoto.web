@@ -13,7 +13,7 @@
       </p>
       <div class="mt-6">
         <div class="columns">
-          <div class="column is-two-fifths">
+          <div class="column is-two-fifths is-hidden-touch">
             <img src="/img/studio/focal-01.jpg" />
           </div>
           <div class="column is-three-fifths">
@@ -23,6 +23,9 @@
                   <div>
                     <h3>Newborn Sessions</h3>
                     <h5>Starting at $185</h5>
+                    <p class="is-hidden-desktop">
+                      <img src="/img/studio/focal-01.jpg" />
+                    </p>
                     <p>
                       Newborn photos can never be redone! Trust these memories (and your precious newborn) with us. All props, outfits, and
                       wraps are provided. You just need to arrive at our clean, spacious studio and enjoy the memories. With two packages to
@@ -60,6 +63,9 @@
                   <div>
                     <h3>Studio Sessions</h3>
                     <h5>starting at $100</h5>
+                    <p class="is-hidden-desktop">
+                      <img src="/img/studio/focal-04.jpg" />
+                    </p>
                     <p>
                       My large studio in Strawberry Plains can be a host to any of your photography needs. With a large variety of
                       backdrops, I'll be able to capture the pictures you're after, no matter the occassion. Gather the family for posed

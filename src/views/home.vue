@@ -26,7 +26,7 @@
         <div class="page-head">
           <h2 class="has-text-centered">{{ yearsOfExpertise }} Years of Expertise</h2>
           <p>
-            I am a photography company based in Strawberry Plains, Tennessee and serving Knoxville and the surrounding areas. I work hard to
+            I am a photographer based in Strawberry Plains, Tennessee and serving Knoxville and the surrounding areas. I work hard to
             capture life's little moments in a way that truly expresses your personality. Welcome to J. Ellison Photography.
           </p>
         </div>

@@ -28,8 +28,8 @@
                       <img src="/img/regular/focal-01.jpg" />
                     </p>
                     <p>
-                      Half sessions are offered year around by appointment. They're great for small families that need just a few updated
-                      pictures.
+                      Half and Full sessions are offered year around by appointment. They're great for families who want to pick their
+                      location and get some updated pictures.
                     </p>
                     <p class="has-text-centered">
                       <router-link class="button is-light" tag="button" to="/sessions/regular/gallery">View Gallery</router-link>
@@ -40,7 +40,7 @@
                           path: '/contact',
                           query: {
                             formOnly: 'true',
-                            sessionType: 'Half Session'
+                            sessionType: 'Regular Session'
                           }
                         }"
                         >Request a Date</router-link

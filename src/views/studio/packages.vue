@@ -81,7 +81,7 @@
                           path: '/contact',
                           query: {
                             formOnly: 'true',
-                            sessionType: 'Studio - Heirloom Session'
+                            sessionType: 'Studio Session'
                           }
                         }"
                         >Request a Date</router-link

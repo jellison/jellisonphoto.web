@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-      <p class="has-text-muted">Copyright &copy; 2019 Jobrina Ellison. All Rights Reserved.</p>
+      <p class="has-text-muted">Copyright &copy; {{ new Date().getFullYear() }} Jobrina Ellison. All Rights Reserved.</p>
     </div>
   </footer>
 </template>
@@ -50,7 +50,7 @@ export default {};
 footer.main {
   font-family: $title-font;
   font-size: 90%;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 30px 0;
 
   @include breakpoint(sm) {

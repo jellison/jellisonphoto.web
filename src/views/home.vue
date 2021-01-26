@@ -24,10 +24,10 @@
     <div class="page-layout">
       <div class="container main">
         <div class="page-head">
-          <h2 class="has-text-centered">10 Years of Expertise</h2>
+          <h2 class="has-text-centered">{{ yearsOfExpertise }} Years of Expertise</h2>
           <p>
-            We are a photography company based in Strawberry Plains, Tennessee and serving Knoxville and the surrounding areas. We work hard
-            to capture life's little moments in a way that truly expresses your personality. Welcome to J. Ellison Photography.
+            I am a photography company based in Strawberry Plains, Tennessee and serving Knoxville and the surrounding areas. I work hard to
+            capture life's little moments in a way that truly expresses your personality. Welcome to J. Ellison Photography.
           </p>
         </div>
         <div class="category-box columns">
@@ -38,8 +38,7 @@
             <div class="column-content">
               <h3>Regular Sessions</h3>
               <p>
-                Special events, engagements, or just some pics of the family, these 1-hour session are a flexible way to capture your
-                moments.
+                Special events, engagements, or just some pics of the family, these sessions are a flexible way to capture your moments.
               </p>
               <p class="buttons is-centered">
                 <router-link to="/sessions/regular" class="button">Explore</router-link>
@@ -76,7 +75,10 @@
             </div>
             <div class="column-content">
               <h3>Newborn and Studio Sessions</h3>
-              <p>Taken within the first 2 weeks, these posed, sleepy shots will capture those innocent moments you'll cherish forever.</p>
+              <p>
+                Newborn photos capture those innocent moments you'll cherish forever. Studio sessions offer a chance to capture every moment
+                including 1st year milestones, family pictures, headshots, boudoir, and everything in between.
+              </p>
               <p class="buttons is-centered">
                 <router-link to="/sessions/studio" class="button">Explore</router-link>
               </p>
@@ -132,6 +134,11 @@ export default {
         '/img/cover/fav_08.jpg'
       ]
     };
+  },
+  computed: {
+    yearsOfExpertise: function () {
+      return parseInt(new Date().getFullYear(), 10) - 2009;
+    }
   },
   components: {
     NavBar,

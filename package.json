@@ -6,7 +6,7 @@
     "build": "vue-cli-service build",
     "format": "npx prettier -w \"src/**/*.(vue|scss|js)\" public/index.html",
     "serve": "vue-cli-service serve",
-    "serve-prod": "vue-cli-service serve --mode production"    
+    "serve-prod": "vue-cli-service serve --mode production"
   },
   "dependencies": {
     "axios": "^0.21.1",

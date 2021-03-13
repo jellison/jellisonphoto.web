@@ -27,7 +27,7 @@
                 <div class="level-item">
                   <div>
                     <h3>Basic Session</h3>
-                    <h5>$185</h5>
+                    <h5>$190</h5>
                     <p class="is-hidden-desktop">
                       <img src="/img/senior/focal-01.jpg" />
                     </p>
@@ -65,7 +65,7 @@
                 <div class="level-item">
                   <div>
                     <h3>Deluxe Session</h3>
-                    <h5>$225</h5>
+                    <h5>$240</h5>
                     <p class="is-hidden-desktop">
                       <img src="/img/senior/focal-02.jpg" />
                     </p>
@@ -109,7 +109,7 @@
                 <div class="level-item">
                   <div>
                     <h3>Platinum Session</h3>
-                    <h5>$285</h5>
+                    <h5>$290</h5>
                     <p class="is-hidden-desktop">
                       <img src="/img/senior/focal-03.jpg" />
                     </p>

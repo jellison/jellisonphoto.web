@@ -23,7 +23,7 @@
                 <div class="level-item">
                   <div>
                     <h3>Regular Sessions</h3>
-                    <h5>starting at $120</h5>
+                    <h5>starting at $150</h5>
                     <p class="is-hidden-desktop">
                       <img src="/img/regular/focal-01.jpg" />
                     </p>

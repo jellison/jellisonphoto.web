@@ -3,7 +3,6 @@ import App from './App.vue';
 import router from './router';
 
 require('./assets/sass/main.scss');
-require('./analytics');
 
 Vue.config.productionTip = false;
 

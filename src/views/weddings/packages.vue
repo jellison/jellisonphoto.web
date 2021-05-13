@@ -16,17 +16,17 @@
           <div class="column-content">
             <div class="package">
               <div class="package-body">
-                <h2>Basic</h2>
+                <h2>Platinum</h2>
                 <ul>
-                  <li>4 hours coverage</li>
+                  <li>6 hours coverage</li>
                   <li>2 photographers</li>
-                  <li class="is-hidden-touch">&nbsp;</li>
-                  <li class="is-hidden-touch">&nbsp;</li>
-                  <li class="is-hidden-touch">&nbsp;</li>
+                  <li>1 Engagement session</li>
+                  <li>or</li>
+                  <li>1 bridal or boudoir session</li>
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$1,200.00</h4>
+                <h4>$2,300.00</h4>
                 <router-link
                   class="button bookNow"
                   tag="a"
@@ -35,39 +35,7 @@
                     query: {
                       formOnly: 'true',
                       sessionType: 'Wedding',
-                      package: 'Basic'
-                    }
-                  }"
-                  >Request Date</router-link
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="column-content">
-            <div class="package">
-              <div class="package-body">
-                <h2>Silver</h2>
-                <ul>
-                  <li>4 hours coverage</li>
-                  <li>2 photographers</li>
-                  <li>1 engagement session</li>
-                  <li style="margin-left: 55px">or</li>
-                  <li>+1 hour coverage</li>
-                </ul>
-              </div>
-              <div class="package-footer">
-                <h4>$1,425.00</h4>
-                <router-link
-                  class="button bookNow"
-                  tag="a"
-                  :to="{
-                    path: 'contact',
-                    query: {
-                      formOnly: 'true',
-                      sessionType: 'Wedding',
-                      package: 'Silver'
+                      package: 'Platinum'
                     }
                   }"
                   >Request Date</router-link
@@ -85,12 +53,12 @@
                   <li>5 hours coverage</li>
                   <li>2 photographers</li>
                   <li>1 engagement session</li>
-                  <li style="margin-left: 55px">or</li>
+                  <li>or</li>
                   <li>+1 hour coverage</li>
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$1,680.00</h4>
+                <h4>$2,000.00</h4>
                 <router-link
                   class="button bookNow"
                   tag="a"
@@ -112,17 +80,17 @@
           <div class="column-content">
             <div class="package">
               <div class="package-body">
-                <h2>Platinum</h2>
+                <h2>Silver</h2>
                 <ul>
-                  <li>7 hours coverage</li>
+                  <li>4 hours coverage</li>
                   <li>2 photographers</li>
-                  <li>1 Engagement session</li>
-                  <li style="margin-left: 55px">or</li>
+                  <li>1 engagement session</li>
+                  <li>or</li>
                   <li>+1 hour coverage</li>
                 </ul>
               </div>
               <div class="package-footer">
-                <h4>$2,200.00</h4>
+                <h4>$1,700.00</h4>
                 <router-link
                   class="button bookNow"
                   tag="a"
@@ -131,7 +99,39 @@
                     query: {
                       formOnly: 'true',
                       sessionType: 'Wedding',
-                      package: 'Platinum'
+                      package: 'Silver'
+                    }
+                  }"
+                  >Request Date</router-link
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-content">
+            <div class="package">
+              <div class="package-body">
+                <h2>Basic</h2>
+                <ul>
+                  <li>4 hours coverage</li>
+                  <li>2 photographers</li>
+                  <li class="is-hidden-touch">&nbsp;</li>
+                  <li class="is-hidden-touch">&nbsp;</li>
+                  <li class="is-hidden-touch">&nbsp;</li>
+                </ul>
+              </div>
+              <div class="package-footer">
+                <h4>$1,400.00</h4>
+                <router-link
+                  class="button bookNow"
+                  tag="a"
+                  :to="{
+                    path: 'contact',
+                    query: {
+                      formOnly: 'true',
+                      sessionType: 'Wedding',
+                      package: 'Basic'
                     }
                   }"
                   >Request Date</router-link
@@ -141,6 +141,10 @@
           </div>
         </div>
       </div>
+      <p class="has-text-centered">
+        Ask about elopement packages! Package pricing is subject to change; pricing is only secured with a signed contract and paid
+        retainer.
+      </p>
       <div class="has-text-centered mt2">
         <router-link class="button" tag="a" to="/weddings/gallery">View Gallery</router-link>
       </div>
@@ -196,4 +200,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.package {
+  li {
+    text-align: center;
+  }
+}
+</style>
